@@ -54,3 +54,15 @@ if (a == 1) {
 }
 
 console.log(a); // Nəticə: 10
+
+// Example 9
+// LET:
+let b = 1;
+console.log(b); // Nəticə: 1
+
+if (b == 1) {
+    let b = 10;
+    console.log(b); // Nəticə: 10
+}
+
+console.log(b); // Nəticə: 1
