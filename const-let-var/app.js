@@ -41,4 +41,16 @@ if (x == 0) {
 // Example 7
 var job = 'front-end developer';
 var job = 'back-end developer';
-console.log(job); // Nəticə: back-end developer
+// console.log(job); // Nəticə: back-end developer
+
+// Example 8 
+// VAR:
+var a = 1;
+console.log(a); // Nəticə: 1
+
+if (a == 1) {
+    var a = 10;
+    console.log(a); // Nəticə: 10
+}
+
+console.log(a); // Nəticə: 10
