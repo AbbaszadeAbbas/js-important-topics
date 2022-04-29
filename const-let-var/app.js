@@ -19,4 +19,10 @@ let pl = ['js', 'c++', 'c#', 'php'];
 function codeSchool() {
     console.log(pl);
 }
-codeSchool();
+// codeSchool(); // Nəticə: ['js', 'c++', 'c#', 'php']
+
+// Example 4
+let book = 'The call of the wild';
+console.log(book); // Nəticə: The call of the wild
+book = 'Robin Hood';
+console.log(book); // Nəticə: Robin Hood
