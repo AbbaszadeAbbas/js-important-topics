@@ -6,3 +6,9 @@ function developing() {
     console.log(course);
 }
 developing();
+
+// Example 2
+function person() {
+    let fullName = 'Hikmat Rajabli';
+}
+console.log(fullName); // Nəticə: fullName is not defined
