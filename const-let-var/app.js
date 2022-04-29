@@ -1,2 +1,8 @@
 'use strict';
-// Let const və var fərqi
+// Let const var və hoisting
+// Example 1 
+function developing() {
+    let course = 'javascript';
+    console.log(course);
+}
+developing();
