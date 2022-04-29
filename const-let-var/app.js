@@ -46,23 +46,35 @@ var job = 'back-end developer';
 // Example 8 
 // VAR:
 var a = 1;
-console.log(a); // Nəticə: 1
+// console.log(a); // Nəticə: 1
 
 if (a == 1) {
     var a = 10;
-    console.log(a); // Nəticə: 10
+    // console.log(a); // Nəticə: 10
 }
 
-console.log(a); // Nəticə: 10
+// console.log(a); // Nəticə: 10
 
-// Example 9
+// Example 9   
 // LET:
 let b = 1;
-console.log(b); // Nəticə: 1
+// console.log(b); // Nəticə: 1
 
 if (b == 1) {
     let b = 10;
-    console.log(b); // Nəticə: 10
+    // console.log(b); // Nəticə: 10
 }
 
-console.log(b); // Nəticə: 1
+// console.log(b); // Nəticə: 1
+
+// Example 10
+const myAge = 22;
+// console.log(myAge);
+
+// myAge = 23;
+// console.log(myAge) // Assignment to constant variable;
+
+// Example 11 
+const myArr = [1, 2, 3, 4];
+myArr.pop();
+// console.log(myArr); // Nəticə: [1, 2, 3]
