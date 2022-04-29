@@ -25,4 +25,8 @@ function codeSchool() {
 let book = 'The call of the wild';
 console.log(book); // Nəticə: The call of the wild
 book = 'Robin Hood';
-console.log(book); // Nəticə: Robin Hood
+// console.log(book); // Nəticə: Robin Hood
+
+// Example 5
+// let personName = 'Samir';
+// let personName; // Nəticə: Identifier 'personName' has already been declared
