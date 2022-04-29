@@ -1,4 +1,4 @@
-# Let const var və hoisting 
+# Let const var
 
 ### Scope nədir ⁉
 Scope: Dəyişkəni tanımladığımız yerə görə adlandırılır və dəyişkən bu ada sahib olur. Məsələn, Local scope'də tanımlanan dəyişkən local dəyişkəndir.
