@@ -32,12 +32,8 @@ book = 'Robin Hood';
 // let personName; // Nəticə: Identifier 'personName' has already been declared
 
 // Example 6
-var x = 1;
-console.log(x); // Nəticə: 1
-
-if (x == 1) {
-    var x = 10;
-    console.log(x); // Nəticə: 10
+var x = 0;
+if (x == 0) {
+    var y = 12;
 }
-
-console.log(x); // Nəticə: 10
+console.log(y);
