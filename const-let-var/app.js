@@ -36,4 +36,9 @@ var x = 0;
 if (x == 0) {
     var y = 12;
 }
-console.log(y);
+// console.log(y); // Nəticə: 12
+
+// Example 7
+var job = 'front-end developer';
+var job = 'back-end developer';
+console.log(job); // Nəticə: back-end developer
