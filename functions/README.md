@@ -1,6 +1,6 @@
 # Funksiya mövzuları
 
-### Function declaration nədir? 
+### Function declaration nədir ⁉
 🆘 Deklarativ funksiyaları adları ilə yazırıq. Yəni bu funksiyalar anonim olmur. Məsələn:
 ```
 function ex1(num) {
@@ -17,7 +17,7 @@ function ex2(num) {
 }
 ```
 
-### Function expression nədir? 
+### Function expression nədir ⁉
 
 🆘 İfadə funksiyalarını bir dəyişkənə tanımlayırıq. Yəni bu funksiyalar anonim olur. Məsələn:
 ```
