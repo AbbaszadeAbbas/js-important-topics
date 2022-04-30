@@ -36,7 +36,7 @@ const ex4 = function(num) {
 }
 ```
 
-✅ İfadə funksiyaları "FIRST CLASS FUNCTION" özəlliyi daşıyır. First class funksiyalar massiv, obyekt və funksiyanın argumenti ola bilərlər. Məsələn massivdə: 
+✅ İfadə funksiyaları "FIRST CLASS FUNCTION" özəlliyi daşıyır. First class funksiyalar massiv, obyekt, funksiyanın argumenti və funksiyada əlavə bir return edilən funksiya ola bilərlər. Məsələn massivdə: 
 ```
 const arr = [function() { return '0' }, function() { return '1' }];
 console.log(arr[0](), arr[1]()); // => 0 1
@@ -59,4 +59,15 @@ function yearOfBirthday(name, ageCalc) {
 
 const age = yearOfBirthday('Hikmat', function(age) { return 2022 - age });
 console.log(age); // => Hikmat, 2000
+```
+
+✅ Funksiyada return edilən funksiya kimi:
+```
+function personOnline(num) {
+    return function countPerson() {
+        return num;
+    }
+}
+
+console.log(personOnline(250)()); // => 250
 ```
