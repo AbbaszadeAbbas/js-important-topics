@@ -50,3 +50,13 @@ const person = {
  }
  console.log(person.age()); // => 22
 ```
+
+✅ Funksiyada argument kimi: 
+```
+function yearOfBirthday(name, ageCalc) {
+    return `${name}, ${ageCalc(22)}`;
+}
+
+const age = yearOfBirthday('Hikmat', function(age) { return 2022 - age });
+console.log(age); // => Hikmat, 2000
+```
