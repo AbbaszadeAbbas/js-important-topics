@@ -71,3 +71,12 @@ function personOnline(num) {
 
 console.log(personOnline(250)()); // => 250
 ```
+
+### Immediately invoked function expression - IIFE nədir ⁉
+
+🆘 Dərhal çağırılan funksiya ifadəsi səhifə yüklənərkən görmək istədiyimiz işlər üçün istifadə oluna bilər. Məsələn:
+```
+(function() {
+    console.log('This is a IIFE');
+})(); // => This is a IIFE
+```
