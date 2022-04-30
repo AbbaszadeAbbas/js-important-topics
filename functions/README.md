@@ -16,9 +16,9 @@ function ex2(num) {
     return num*num;
 }
 
-### Function declaration nədir? 
+### Function expression nədir? 
 
-🆘 Deklarativ funksiyaları bir dəyişkənə tanımlayırıq. Yəni bu funksiyalar anonim olur. Məsələn:
+🆘 Ifadə funksiyalarını bir dəyişkənə tanımlayırıq. Yəni bu funksiyalar anonim olur. Məsələn:
 ```
 const ex3 = function(num) {
         return num * num
