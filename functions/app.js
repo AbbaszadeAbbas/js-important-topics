@@ -4,4 +4,4 @@
 function ex1(num) {
     return num * num;
 }
-console.log(ex1(5)); // Nəticə 25
+// console.log(ex1(5)); // Nəticə 25
