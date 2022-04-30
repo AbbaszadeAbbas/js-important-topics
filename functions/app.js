@@ -40,10 +40,20 @@ const person = {
     // console.log(person.age()); // => 22
 
 // Example 7
-// First class in function arguments
+// First class function in function arguments
 function yearOfBirthday(name, ageCalc) {
     return `${name}, ${ageCalc(22)}`;
 }
 
 const age = yearOfBirthday('Hikmat', function(age) { return 2022 - age });
 // console.log(age); // => Hikmat, 2000
+
+// Example 8
+// First class function in function return
+function personOnline(num) {
+    return function countPerson() {
+        return num;
+    }
+}
+
+// console.log(personOnline(250)()); // => 250
