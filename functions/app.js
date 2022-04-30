@@ -57,3 +57,9 @@ function personOnline(num) {
 }
 
 // console.log(personOnline(250)()); // => 250
+
+// Example 9 
+// Immediately invoked function expression - IIFE
+(function() {
+    console.log('This is a IIFE');
+})(); // => This is a IIFE
