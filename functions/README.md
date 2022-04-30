@@ -18,11 +18,19 @@ function ex2(num) {
 
 ### Function expression nədir? 
 
-🆘 Ifadə funksiyalarını bir dəyişkənə tanımlayırıq. Yəni bu funksiyalar anonim olur. Məsələn:
+🆘 İfadə funksiyalarını bir dəyişkənə tanımlayırıq. Yəni bu funksiyalar anonim olur. Məsələn:
 ```
 const ex3 = function(num) {
         return num * num
     } 
-// console.log(ex3(2)); // => 4
+console.log(ex3(2)); // => 4
 
+```
+
+⛔ İfadə funksiyaları hoisted olmur. Yəni istənilən yerdə çağırmaq olmur. Məsələn: 
+```
+console.log(ex4(9)); // => Cannot access 'ex4' before initialization
+const ex4 = function(num) {
+    return num * num
+}
 ```
