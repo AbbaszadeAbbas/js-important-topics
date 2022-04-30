@@ -30,3 +30,11 @@ const ex4 = function(num) {
 // First class function in array
 const arr = [function() { return '0' }, function() { return '1' }];
 // console.log(arr[0](), arr[1]()); // => 0 1
+
+// Example 6
+// First class function in object
+const person = {
+    name: 'Rajab',
+    age: function() { return 22 }
+}
+console.log(person.age());
