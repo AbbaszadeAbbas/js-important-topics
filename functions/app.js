@@ -34,7 +34,16 @@ const arr = [function() { return '0' }, function() { return '1' }];
 // Example 6
 // First class function in object
 const person = {
-    name: 'Rajab',
-    age: function() { return 22 }
+        name: 'Rajab',
+        age: function() { return 22 }
+    }
+    // console.log(person.age()); // => 22
+
+// Example 7
+// First class in function arguments
+function yearOfBirthday(name, ageCalc) {
+    return `${name}, ${ageCalc(22)}`;
 }
-console.log(person.age());
+
+const age = yearOfBirthday('Hikmat', function(age) { return 2022 - age });
+console.log(age); // => Hikmat, 2000
