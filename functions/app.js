@@ -25,3 +25,8 @@ const ex3 = function(num) {
 const ex4 = function(num) {
     return num * num
 }
+
+// Example 5
+// First class function in array
+const arr = [function() { return '0' }, function() { return '1' }];
+// console.log(arr[0](), arr[1]()); // => 0 1
