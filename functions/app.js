@@ -4,10 +4,10 @@
 function ex1(num) {
     return num * num;
 }
-// console.log(ex1(5)); // Nəticə 25
+// console.log(ex1(5)); // => 25
 
 // Example 2
-// console.log(ex2(4)); // Nəticə 16
+// console.log(ex2(4)); // => 16
 function ex2(num) {
     return num * num;
 }
@@ -17,4 +17,4 @@ function ex2(num) {
 const ex3 = function(num) {
     return num * num
 }
-console.log(ex3(2)); // Nəticə 4
+console.log(ex3(2)); // => 4
