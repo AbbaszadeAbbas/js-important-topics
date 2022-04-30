@@ -35,3 +35,9 @@ const ex4 = function(num) {
     return num * num
 }
 ```
+
+✅ İfadə funksiyaları "FIRST CLASS FUNCTION" özəlliyi daşıyır. First class funksiyalar massiv, obyekt və funksiyanın argumenti ola bilərlər. Məsələn: 
+```
+const arr = [function() { return '0' }, function() { return '1' }];
+console.log(arr[0](), arr[1]()); // => 0 1
+```

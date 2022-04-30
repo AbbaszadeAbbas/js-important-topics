@@ -46,4 +46,4 @@ function yearOfBirthday(name, ageCalc) {
 }
 
 const age = yearOfBirthday('Hikmat', function(age) { return 2022 - age });
-console.log(age); // => Hikmat, 2000
+// console.log(age); // => Hikmat, 2000
