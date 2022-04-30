@@ -15,6 +15,7 @@ console.log(ex2(4)); // => 16
 function ex2(num) {
     return num*num;
 }
+```
 
 ### Function expression nədir? 
 
