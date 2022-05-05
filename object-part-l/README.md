@@ -36,3 +36,26 @@ Demək, console.log(myThis.whatIsThis()) => bizə nə verəcək? Təbii ki, myTh
 
 ### Nə üçün bir obyektə ehtiyac duyarıq ⁉
 Əgər istəsək yuxarıdakı örənkələrdəki özəllikləri ayrı-ayrı da qlobal dəyişkən olaraq (let name = 'hikmat') tanımlaya bilərdik. Amma obyekt məntiqi sayəsində onların hamsını bir obyektdə saxlayırıq. Bu həm təmiz kod yazmağa zəmin yaradır həm də bütün işləri bir obyekt üzərindən aparmağımıza imkan verir. 
+
+### Object Literal, Constructor function, Dot Notation, Bracket Notation
+
+Yuxarıdaki obyekt yaratma yolları Object Literal adlanır. Yəni:
+```
+const Person = {
+    name: 'Hikmat',
+    surname: 'Rajabli',
+    age: 22,
+    birthOfYear: function() {
+        return 22 - this.age;
+    },
+    shortInfo: function() {
+        return `Hi, I'm ${this.name} ${this.surname}`;
+    },
+}
+```
+Object Literal'da dəyərlər hazır gəlməlidir. Sonradan dəyər dəyişdirmək və ya özəllik əlavə etmək mümkündür. Bunları etmək üçün Dot Notation və Bracket Notation istifadə edirik. Narahat olmayın, bildiyiniz şeylərdir. 
+
+1. Dot Notation: console.log(Person.name)
+2. Dot Notation Person.name = 'Ramin'
+3. Bracket Notation: console.log(Person['name'], Person['birthOfYear']())
+4. Person['newProperty'] = 'This is new Property'
