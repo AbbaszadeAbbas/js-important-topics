@@ -57,5 +57,5 @@ Object Literal'da dəyərlər hazır gəlməlidir. Sonradan dəyər dəyişdirm�
 
 1. Dot Notation: console.log(Person.name)
 2. Dot Notation Person.name = 'Ramin'
-3. Bracket Notation: console.log(Person['name'], Person['birthOfYear']())
+3. Bracket Notation: console.log(Person['name'])
 4. Person['newProperty'] = 'This is new Property'
