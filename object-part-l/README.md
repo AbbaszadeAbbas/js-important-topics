@@ -15,3 +15,5 @@ const Person = {
     }
 }
 ```
+
+🆘 Yuxarıdakı örnəkdə birthOfYear və shortInfo bir özəllikdir dedik. Amma ümumi olaraq obyekt içindəki funksiyalara metod deyilir. 
