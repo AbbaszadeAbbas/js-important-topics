@@ -20,7 +20,7 @@ const Person = {
 
 ### This nədir ⁉
 
-This yazıldığı yerdə hansı data tipinin içinə yazılıbsa, o data tipinin hansı data tipinin içində olduğunu göstərir. Bilirəm başınız qarışdı :D Ona görə də keçək örnəklərə. 
+This yazıldığı yerdə hansı data tipinin içinə yazılıbsa, o data tipinin hansı data tipinin içində olduğunu göstərir. Bilirəm başınız qarışdı. Ona görə də keçək örnəklərə. 
 ```
 const myThis = {
     whatIsThis: function() { return this }
@@ -33,3 +33,6 @@ Yuxarıdakı örnəkdə myThis obyektinin içindəki whatIsThis metodunda this r
 Demək, console.log(myThis.whatIsThis()) => bizə nə verəcək? Təbii ki, myThis obyektini!
 
 ![This is image](./img/1.jpg)
+
+### Nə üçün bir obyektə ehtiyac duyarıq ⁉
+Əgər istəsək yuxarıdakı örənkələrdəki özəllikləri ayrı-ayrı da qlobal dəyişkən olaraq (let name = 'hikmat') tanımlaya bilərdik. Amma obyekt məntiqi sayəsində onların hamsını bir obyektdə saxlayırıq. Bu həm təmiz kod yazmağa zəmin yaradır həm də bütün işləri bir obyekt üzərindən aparmağımıza imkan verir. 
