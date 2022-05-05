@@ -29,6 +29,6 @@ const myThis = {
 Yuxarıdakı örnəkdə myThis obyektinin içindəki whatIsThis metodunda this return (geriyə döndürmə) edilib. İndi mərhələ-mərhələ davam edək:
 1. This yazıldığı yerdə hansı data tipinin içinə yazılıbsa => this whatIsThis metodunun içinə yazılıb
 2. O data tipinin hansı data tipinin içində olduğunu göstərir => whatIsThis metodu, myThis obyektinin içinə yazılıb.
-Demək, console.log(myThis.whatIsThis()) => bizə nə verəcək? 
-![This is image](./img/1.jpg);
-Bu qədər sadə! 
+Demək, console.log(myThis.whatIsThis()) => bizə nə verəcək? Təbii ki, myThis obyektini!
+
+![This is image](./img/1.jpg)
