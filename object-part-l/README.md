@@ -1,7 +1,7 @@
 # Obyekt 1 HİSSƏ
 
 ### Obyekt nədir ⁉
-Obyekt, property və value (ad və dəyər)'dən ibarət data tipidir. Aşağıda Person obyektindəki name, surname, age, birthOfYear, shortInfo obyektin property, qarşılarındakı isə dəyərləridir:
+Obyekt, property və value (özəllik və dəyər)'dən ibarət data tipidir. Aşağıda Person obyektindəki name, surname, age, birthOfYear, shortInfo obyektin property, qarşılarındakı isə dəyərləridir:
 ```
 const Person = {
     name: 'Hikmat',
