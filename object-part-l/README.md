@@ -24,6 +24,7 @@ This yazıldığı yerdə hansı data tipinin içinə yazılıbsa, o data tipini
 ```
 const myThis = {
     whatIsThis: function() { return this }
+    console.log(myThis.whatIsThis()) // => {whatIsThis: ƒ}
 }
 ```
 Yuxarıdakı örnəkdə myThis obyektinin içindəki whatIsThis metodunda this return (geriyə döndürmə) edilib. İndi mərhələ-mərhələ davam edək:
