@@ -10,5 +10,11 @@ const Person = {
     },
     shortInfo: function() {
         return `Hi, I'm ${this.name} ${this.surname}`;
-    }
+    },
 }
+
+// Example 2 - this
+const myThis = {
+    whatIsThis: function() { return this }
+}
+console.log(myThis.whatIsThis());
