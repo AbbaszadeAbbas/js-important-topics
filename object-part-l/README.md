@@ -39,7 +39,7 @@ Demək, console.log(myThis.whatIsThis()) => bizə nə verəcək? Təbii ki, myTh
 
 ### Object Literal, Constructor function, Dot Notation, Bracket Notation
 
-Yuxarıdaki obyekt yaratma yolları Object Literal adlanır. Yəni:
+Yuxarıdaki obyekt yaratma yolları **Object Literal** adlanır. Yəni:
 ```
 const Person = {
     name: 'Hikmat',
@@ -53,9 +53,14 @@ const Person = {
     },
 }
 ```
-Object Literal'da dəyərlər hazır gəlməlidir. Sonradan dəyər dəyişdirmək və ya özəllik əlavə etmək mümkündür. Bunları etmək üçün Dot Notation və Bracket Notation istifadə edirik. Narahat olmayın, bildiyiniz şeylərdir. 
+🆘 **Object Literal**'da dəyərlər hazır gəlməlidir. Sonradan dəyər dəyişdirmək və ya özəllik əlavə etmək mümkündür. Bunları etmək üçün Dot Notation və Bracket Notation istifadə edirik. Narahat olmayın, bildiyiniz şeylərdir. 
 
 1. Dot Notation: console.log(Person.name)
 2. Dot Notation Person.name = 'Ramin'
 3. Bracket Notation: console.log(Person['name'])
 4. Person['newProperty'] = 'This is new Property'
+
+🆘 **Constructor Function** vasitəsilə obyekt yarada bilərik. Qurucu funksiyalar (constructor) sayəsində hər dəfəsində yeni obyektlər yarada bilərik. Məsələn:
+```
+Ardı var...
+```
