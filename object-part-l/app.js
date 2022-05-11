@@ -17,3 +17,4 @@ const Person = {
 const myThis = {
     whatIsThis: function() { return this }
 }
+
