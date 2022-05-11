@@ -15,3 +15,23 @@
 👁‍🗨 Təsəvvür edək ki, bir restorana gedirik və sifariş veririk. Bizim kimi sifariş verən bir neçə nəfər də var. Amma restoran hərkəsə birdən xidmət göstərir. Yəni restoranın iş prinsipi bu deyil: 
 ⛔ "Bu müştəriyə tam xidmət göstərim yola salım, ona qədər bütün yeni müştərilər gözləsinlər, yola saldıqdan sonra isə gözləyənlərin birincisini seçim ona xidmət göstərim." 
 ✅ Restoran hərkəsə birdən xidmət göstərir. Bu asinxron çalışmadır. Yuxarıdaki iş prinsipi isə sinxron çalışmadır. Javascript kodları müəyyən ardıcıllıqla işə saldığı üçün sinxron prinsipə sahibdir. Yəni 4 sətir kod var, 2 ci sətirdə bir gecikmə yaşansa gecikmə həll olunana qədər gözlənilir. Amma asinxron iş prinsipi 2 ci sətiri gözləməz (ətraflı aşağıda qeyd olunub) digər sətirlərə keçər və sonda 2 ci sətiri çalışdırar.
+
+### Sinxron
+```
+const func1 = () => {
+    console.log('Birinci kod');
+    console.log('İkinci kod');
+    alert('Üçüncü kod');
+    func2();
+}
+
+const func2 = () => {
+    console.log('Dördüncü kod');
+}
+```
+
+Yuxarıdakı proqramda func1() çağrıldıqda konsol sətrində ardıcıllıq belə olur:
+- Birinci kod
+- İkinci kod
+- ALERT: Üçüncü kod (Ok basmadıqca digər sətirə keçilmir)
+- Ok basdıqdan sonra: Dördüncü sətir
