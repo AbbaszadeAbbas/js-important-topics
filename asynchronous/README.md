@@ -38,7 +38,7 @@ Yuxarıdakı proqramda func1() çağrıldıqda konsol sətrində ardıcıllıq b
 - Ok basdıqdan sonra: Dördüncü sətir
 
 Bəlkə mənim ürəyim OK'a basmaq istəmir?! Məcburam ki, OK basım? Demək basmasam proqram davam etməyəcək. Yaxşı ki, burda heç olmasa kontrol mənim əlimdədir. Bəs kontrol bizdə olmasaydı? Düşünün ki, bir məlumat çağırmışıq oturub yazdığımız kodun nazı ilə oynayırıq, dua edirik ki, tez gəlsin...
-#### PROBLEM 1: Gecimə nəticəsində proqramımız sonlanmaya bilər.
+#### PROBLEM 1: Gecimə nəticəsində proqramımız yavaş çalışa və bloklana bilər.
 
 #### Örnək 2:
 ```
