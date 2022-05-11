@@ -1,4 +1,4 @@
-# Asinxron (asynchronous)
+# Asinxron (asynchronous) [Source](./app.js)
 
 ### JS Single Thread və Synchronous dildir.
 
