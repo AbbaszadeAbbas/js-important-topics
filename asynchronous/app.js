@@ -13,3 +13,15 @@ const func2 = () => {
 }
 
 // func1()
+
+// Example 2
+let x = 10;
+console.log('1. X: ', x);
+
+setTimeout(() => {
+    x += 5;
+}, 1000)
+console.log('2. X: ', x);
+
+x += 5;
+console.log('3. X: ', x);

@@ -17,6 +17,7 @@
 ✅ Restoran hərkəsə birdən xidmət göstərir. Bu asinxron çalışmadır. Yuxarıdaki iş prinsipi isə sinxron çalışmadır. Javascript kodları müəyyən ardıcıllıqla işə saldığı üçün sinxron prinsipə sahibdir. Yəni 4 sətir kod var, 2 ci sətirdə bir gecikmə yaşansa gecikmə həll olunana qədər gözlənilir. Amma asinxron iş prinsipi 2 ci sətiri gözləməz (ətraflı aşağıda qeyd olunub) digər sətirlərə keçər və sonda 2 ci sətiri çalışdırar.
 
 ### Sinxron
+#### Örnək 1:
 ```
 const func1 = () => {
     console.log('Birinci kod');
@@ -35,3 +36,29 @@ Yuxarıdakı proqramda func1() çağrıldıqda konsol sətrində ardıcıllıq b
 - İkinci kod
 - ALERT: Üçüncü kod (Ok basmadıqca digər sətirə keçilmir)
 - Ok basdıqdan sonra: Dördüncü sətir
+
+Bəlkə mənim ürəyim OK'a basmaq istəmir?! Məcburam ki, OK basım? Demək basmasam proqram davam etməyəcək. Yaxşı ki, burda heç olmasa kontrol mənim əlimdədir. Bəs kontrol bizdə olmasaydı? Düşünün ki, bir məlumat çağırmışıq oturub yazdığımız kodun nazı ilə oynayırıq, dua edirik ki, tez gəlsin...
+- PROBLEM 1: Gecimə nəticəsində proqramımız sonlanmaya bilər.
+
+#### Örnək 2:
+```
+let x = 10;
+console.log('1. X: ', x);
+
+setTimeout(() => {
+    x += 5;
+}, 1000)
+console.log('2. X: ', x);
+
+x += 5;
+console.log('3. X: ', x);
+```
+
+Yuxarıdakı proqramda konsol sətrində ardıcıllıq belədir:
+- 1. X: 10
+- 2. X: 10
+- 3. X: 15
+
+setTimeout ilə 1 saniyə gecikməylə əlavə olunan 5 dəyəri sinxron iş prinsibi sayəsində nəzə alınmadı. Alınsaydı, X'in son dəyəri 20 olardı.
+
+- PROBLEM 2: Gecikmə nəticəsində internetdən çağırdığımız hər hansı məlumat gec gələ və proqramımız natamam sonlana bilər!
