@@ -6,11 +6,6 @@
 
 ![This is image](./img/js-heap-stack.png)
 
-### Call stack nədir ⁉
-👁‍🗨 Call stack - sadəcə olaraq proqramda olduğumuz yeri qeyd edən məlumat strukturudur. İndi gəlin işlərin yavaşladığı nöqtəyə gələk, əgər biz bir anda bir kod parçasını işlədə biliriksə, sonradan çağırılacaq funksiyalar icra olunmazdan əvvəl, öncədən çağırılan funksiyaların bitməsini gözləməliyik. Əgər kodumuz yalnız console.log və ya digər sadə əməliyyatlardan ibarətdirsə, bu problem olmaya bilər, lakin təsvirin emalı (image processing) və ya şəbəkə sorğuları (network queries) çox vaxt apara bilər. Yəni bu problem yaradar mı? Əlbəttə! Kodumuzu brauzerdə işlətdiyimiz üçün və Call stack boş olmadığı müddətcə brauzerdə edəcəyimiz heç bir şey işlənməyəcək, brauzer sözün əsl mənasında donacaq. Bunun həll yolu Asinxron proqramlaşdırmadır 👌
-
-![This is gif](./img/callstack.gif)
-
 ### Asinxron və Sinxron nədir ⁉
 👁‍🗨 Təsəvvür edək ki, bir restorana gedirik və sifariş veririk. Bizim kimi sifariş verən bir neçə nəfər də var. Amma restoran hərkəsə birdən xidmət göstərir. Yəni restoranın iş prinsipi bu deyil: 
 ⛔ "Bu müştəriyə tam xidmət göstərim yola salım, ona qədər bütün yeni müştərilər gözləsinlər, yola saldıqdan sonra isə gözləyənlərin birincisini seçim ona xidmət göstərim." 
@@ -62,3 +57,12 @@ Yuxarıdakı proqramda konsol sətrində ardıcıllıq belədir:
 setTimeout ilə 1 saniyə gecikməylə əlavə olunan 5 dəyəri sinxron iş prinsibi sayəsində nəzə alınmadı. Alınsaydı, X'in son dəyəri 20 olardı.
 
 #### PROBLEM 2: Gecikmə nəticəsində internetdən çağırdığımız hər hansı məlumat gec gələ və proqramımız natamam sonlana bilər!
+
+### Asinxron
+Yaxşı bəs bayaqdan danışırıq ki, Javascript sinxron iş prinsibinə sahibdir. Bəs necə asinxron işləyə bilir? Unutmayaq ki, Javascript hər zaman sinxron işləyir. Ancaq biz, yazacağımız Javascript kodlarıyla JS Çalışma ortamının (JS Runtime) içində sanki eyni anda fərqli işləri görürmüş kimi Javascript kodunu manipulyasiya edə bilirik. Javascript asinxron çalışmalarda Callback, Promise və async await istifadə edir. İndi hazır olaq sehirli bir söz görəcik: CALL STACK 😎
+
+
+### Call stack nədir ⁉
+👁‍🗨 Call stack - sadəcə olaraq proqramda olduğumuz yeri qeyd edən məlumat strukturudur. İndi gəlin işlərin yavaşladığı nöqtəyə gələk, əgər biz bir anda bir kod parçasını işlədə biliriksə, sonradan çağırılacaq funksiyalar icra olunmazdan əvvəl, öncədən çağırılan funksiyaların bitməsini gözləməliyik. Əgər kodumuz yalnız console.log və ya digər sadə əməliyyatlardan ibarətdirsə, bu problem olmaya bilər, lakin təsvirin emalı (image processing) və ya şəbəkə sorğuları (network queries) çox vaxt apara bilər. Yəni bu problem yaradar mı? Əlbəttə! Kodumuzu brauzerdə işlətdiyimiz üçün və Call stack boş olmadığı müddətcə brauzerdə edəcəyimiz heç bir şey işlənməyəcək, brauzer sözün əsl mənasında donacaq. Bunun həll yolu Asinxron proqramlaşdırmadır 👌
+
+![This is gif](./img/callstack.gif)
