@@ -38,7 +38,7 @@ Yuxarıdakı proqramda func1() çağrıldıqda konsol sətrində ardıcıllıq b
 - Ok basdıqdan sonra: Dördüncü sətir
 
 Bəlkə mənim ürəyim OK'a basmaq istəmir?! Məcburam ki, OK basım? Demək basmasam proqram davam etməyəcək. Yaxşı ki, burda heç olmasa kontrol mənim əlimdədir. Bəs kontrol bizdə olmasaydı? Düşünün ki, bir məlumat çağırmışıq oturub yazdığımız kodun nazı ilə oynayırıq, dua edirik ki, tez gəlsin...
-- PROBLEM 1: Gecimə nəticəsində proqramımız sonlanmaya bilər.
+#### PROBLEM 1: Gecimə nəticəsində proqramımız sonlanmaya bilər.
 
 #### Örnək 2:
 ```
@@ -61,4 +61,4 @@ Yuxarıdakı proqramda konsol sətrində ardıcıllıq belədir:
 
 setTimeout ilə 1 saniyə gecikməylə əlavə olunan 5 dəyəri sinxron iş prinsibi sayəsində nəzə alınmadı. Alınsaydı, X'in son dəyəri 20 olardı.
 
-- PROBLEM 2: Gecikmə nəticəsində internetdən çağırdığımız hər hansı məlumat gec gələ və proqramımız natamam sonlana bilər!
+#### PROBLEM 2: Gecikmə nəticəsində internetdən çağırdığımız hər hansı məlumat gec gələ və proqramımız natamam sonlana bilər!
