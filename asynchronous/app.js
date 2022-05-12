@@ -53,6 +53,7 @@ Birinci
 Birinci təkrar
 */
 
+// Example 4
 function task(message) {
     let n = 1000000000;
     while (n > 0) {
