@@ -101,3 +101,31 @@ Yuxarıdakı kod sətrinə baxın. İndi məncə tam aydın oldu single thread n
 ### Event loop
 Event loop JavaScript-in icrası və işləmə prosesinin əsas nüvələrindən biridir. Daha da açıqlayıcı formada desək Event loop JS kitabxanalarının ürəyidir. Onun əsas işi sonsuz döngə şəklində davamlı olaraq Callstack quyruğuna (Callstack queue) köçürülən funksiyaları müvafiq vaxt gəldikdə (adətən işləyən metod başa çatdıqda) Callstack'a atmaq və onları işə salmaqdır.
 ![This is image](./img/inside-js.png)
+Aşağıdakı kod sətrinə baxaq:
+```
+function task(message) {
+    let n = 1000000000;
+    while (n > 0) {
+        n--;
+    }
+    console.log(message);
+}
+
+console.log(1);
+
+setTimeout(() => {
+    console.log(2);
+}, 1000);
+
+console.log(3);
+console.log(4);
+
+task('Process completed!')
+```
+Ardıcıllıq belə olacaq:
+1. 1
+2. 3
+3. 4
+4. Process completed!
+5. 2
+Maraqlıdır? Demək burda nə olur: SetTimeout callback funksiya aldığı üçün və callback funksiayalar proqramda ən son çalışdığı üçün (Çünki callback funksiyalar callback quyruğuna göndərilir və müvafiq müddətdən sonra callstack'a ötürülür.) 1 saniyə keçsə belə task() funksiyasının bitməsini gözləyir (Bu bir neçə saniyə çəkir) və ekranda görünür. 
