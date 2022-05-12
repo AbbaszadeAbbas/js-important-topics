@@ -96,3 +96,8 @@ firstFunc()
     */
 ```
 Yuxarıdakı kod sətrinə baxın. İndi məncə tam aydın oldu single thread nədir! :) Proqram sinxron olaraq firstFunc()'dan sətir-sətir işlənməyə başlandı və  secondFunc()'a çatanda getdi onun içindəkiləri oxumağa, ordan da thirdFunc()'u gördü getdi onu oxumağa, sonra qayıtdı secondFunc()'a və onu oxuyub bitirərək firstFunc()'a geri qayıdıb console.log('Birinci təkrar') sətrini işə saldı. Nəticə olaraq bir səfərdə bir iş görüldü. Bu funksiyalar call stack'da belə işləyirlər. 
+
+
+### Event loop
+Event loop JavaScript-in icrası və işləmə prosesinin əsas nüvələrindən biridir. Daha da açıqlayıcı formada desək Event loop JS kitabxanalarının ürəyidir. Onun əsas işi sonsuz döngə şəklində davamlı olaraq Callstack quyruğuna (Callstack queue) köçürülən funksiyaları müvafiq vaxt gəldikdə (adətən işləyən metod başa çatdıqda) Callstack'a atmaq və onları işə salmaqdır.
+![This is image](./img/inside-js.png)
