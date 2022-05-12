@@ -25,3 +25,30 @@ console.log('2. X: ', x);
 
 x += 5;
 console.log('3. X: ', x);
+
+// Example 3
+function firstFunc() {
+    console.log('Birinci');
+    secondFunc();
+    console.log('Birinci təkrar');
+}
+
+function secondFunc() {
+    console.log('İkinci');
+    thirdFunc();
+    console.log('İkinci təkrar');
+}
+
+function thirdFunc() {
+    console.log('Üçüncü');
+}
+
+firstFunc()
+    /*
+    Nəticə:
+    Birinci
+    İkinci
+    Üçüncü
+    İkinci təkrar
+    Birinci təkrar
+    */
