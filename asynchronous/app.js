@@ -16,15 +16,15 @@ const func2 = () => {
 
 // Example 2
 let x = 10;
-console.log('1. X: ', x);
+// console.log('1. X: ', x);
 
 setTimeout(() => {
-    x += 5;
-}, 1000)
-console.log('2. X: ', x);
+        x += 5;
+    }, 1000)
+    // console.log('2. X: ', x);
 
 x += 5;
-console.log('3. X: ', x);
+// console.log('3. X: ', x);
 
 // Example 3
 function firstFunc() {
@@ -43,12 +43,31 @@ function thirdFunc() {
     console.log('Üçüncü');
 }
 
-firstFunc()
-    /*
-    Nəticə:
-    Birinci
-    İkinci
-    Üçüncü
-    İkinci təkrar
-    Birinci təkrar
-    */
+// firstFunc()
+/*
+Nəticə:
+Birinci
+İkinci
+Üçüncü
+İkinci təkrar
+Birinci təkrar
+*/
+
+function task(message) {
+    let n = 1000000000;
+    while (n > 0) {
+        n--;
+    }
+    console.log(message);
+}
+
+console.log(1);
+
+setTimeout(() => {
+    console.log(2);
+}, 1000);
+
+console.log(3);
+console.log(4);
+
+task('Process completed!')
