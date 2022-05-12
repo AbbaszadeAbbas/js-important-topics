@@ -66,3 +66,33 @@ Yaxşı bəs bayaqdan danışırıq ki, Javascript sinxron iş prinsibinə sahib
 👁‍🗨 Call stack - sadəcə olaraq proqramda olduğumuz yeri qeyd edən məlumat strukturudur. İndi gəlin işlərin yavaşladığı nöqtəyə gələk, əgər biz bir anda bir kod parçasını işlədə biliriksə, sonradan çağırılacaq funksiyalar icra olunmazdan əvvəl, öncədən çağırılan funksiyaların bitməsini gözləməliyik. Əgər kodumuz yalnız console.log və ya digər sadə əməliyyatlardan ibarətdirsə, bu problem olmaya bilər, lakin təsvirin emalı (image processing) və ya şəbəkə sorğuları (network queries) çox vaxt apara bilər. Yəni bu problem yaradar mı? Əlbəttə! Kodumuzu brauzerdə işlətdiyimiz üçün və Call stack boş olmadığı müddətcə brauzerdə edəcəyimiz heç bir şey işlənməyəcək, brauzer sözün əsl mənasında donacaq. Bunun həll yolu Asinxron proqramlaşdırmadır 👌
 
 ![This is gif](./img/callstack.gif)
+
+### Biraz single thread
+```
+function firstFunc() {
+    console.log('Birinci');
+    secondFunc();
+    console.log('Birinci təkrar');
+}
+
+function secondFunc() {
+    console.log('İkinci');
+    thirdFunc();
+    console.log('İkinci təkrar');
+}
+
+function thirdFunc() {
+    console.log('Üçüncü');
+}
+
+firstFunc()
+    /*
+    Nəticə:
+    Birinci
+    İkinci
+    Üçüncü
+    İkinci təkrar
+    Birinci təkrar
+    */
+```
+Yuxarıdakı kod sətrinə baxın. İndi məncə tam aydın oldu single thread nədir! :) Proqram sinxron olaraq firstFunc()'dan sətir-sətir işlənməyə başlandı və  secondFunc()'a çatanda getdi onun içindəkiləri oxumağa, ordan da thirdFunc()'u gördü getdi onu oxumağa, sonra qayıtdı secondFunc()'a və onu oxuyub bitirərək firstFunc()'a geri qayıdıb console.log('Birinci təkrar') sətrini işə saldı. Nəticə olaraq bir səfərdə bir iş görüldü. Bu funksiyalar call stack'da belə işləyirlər. 
