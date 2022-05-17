@@ -178,3 +178,5 @@ Yaxşı bəs resolve və ya reject'ə göndərdiyimiz dəyəri necə alarıq? N�
 
 ![This is image](./img/promise10.png)
 ![This is image](./img/promise11.png)
+
+Biraz qarışıq kimi gəlir amma Javascriptdəki OOP struktrunu yaxşı başa düşsək bu qarmaşıqlığın öhdəsindən çox asanlıqla gələ bilərik. Göründüyü kimi .then özü bir funksiyadır və parametr olaraq ona resolve funksiyası dəyər göndərir. Çox maraqlıdır hə? İçinizdəki səsi eşidirəm, "yox maraqlı deyil". 
