@@ -156,4 +156,7 @@ Demək resolve'ə göndərdiyimiz "Data" bizə PromiseResult ilə qayıtdı. Əl
 ![This is image](./img/promise06.png)
 ![This is image](./img/promise07.png)
 
-Dostumuz Reject bizə deyir ki, bir xəta aldın. Ona görə də qırmızı arxa fonda "Uncaught (in promise) undefined" xətası aldıq. Demək bizə verilən söz (Promise) yerinə yetirildi. Yaxşı gedək dostumuza da parametr olaraq "ERROR" verək.
+Dostumuz Reject bizə deyir ki, bir xəta aldın. Ona görə də qırmızı arxa fonda "Uncaught (in promise) undefined" xətası aldıq. Demək bizə verilən söz (Promise) yerinə yetirildi. Yaxşı gedək dostumuza da parametr olaraq "ERROR" verək:
+
+![This is image](./img/promise08.png)
+![This is image](./img/promise09.png)

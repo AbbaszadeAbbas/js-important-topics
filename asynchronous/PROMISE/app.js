@@ -20,7 +20,7 @@ addNewBook({ name: "Berlin xatireleri", author: "Husrev Gerede" }, listBooks);
 
 const promise = new Promise(function(resolve, reject) {
     // resolve('DATA');
-    reject();
+    reject('ERROR');
 })
 
 console.log(promise);
