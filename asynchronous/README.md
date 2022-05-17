@@ -143,3 +143,6 @@ Tutaq ki, RESTApi'dən və ya verilənlər bazasından eləcə də internetdən 
 ![This is image](./img/promise03.png);
 
 resolve(); yazıldığı zaman, PromiseState'in dəyərinin "fulfilled" (yerinə yetirildi (bəzən resolved də deyilir)) olduğunu görürük. Yəni uğurla nəticələndi. Amma PromiseResult hələ də undefined olaraq qalıb. Niyə? Çünki biz obyekti (new Promise) yaradarkən yazdığımız funksiya 2 parametr alır (Resolve və Reject) və bunlarda özləri bir funksiyadır amma biz o funskiyalara dəyər göndərmədik. Baş qarışdı bilirəm amma düzələcək səbirli olaq :) İndi resolve funksiyasına parametr verək: 
+
+![This is image](./img/promise04.png);
+![This is image](./img/promise05.png);
