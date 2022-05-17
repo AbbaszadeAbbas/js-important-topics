@@ -146,3 +146,5 @@ resolve(); yazıldığı zaman, PromiseState'in dəyərinin "fulfilled" (yerinə
 
 ![This is image](./img/promise04.png);
 ![This is image](./img/promise05.png);
+
+Demək resolve'ə göndərdiyimiz "Data" bizə PromiseResult ilə qayıtdı. Əlbəttə ki, biz məlumatlarımızı string şəklində almayacıq. İndi sadəcə səhnələşdiririk. 
