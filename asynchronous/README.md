@@ -162,7 +162,7 @@ Dostumuz Reject bizə deyir ki, bir xəta aldın. Ona görə də qırmızı arxa
 ![This is image](./img/promise09.png)
 
 #### Nəticə etibarilə:
-Promise'in 3 ədəd state'i var:
+Promise'in 3 ədəd state'i (PromiseState) var:
 
 1. Pending:
     - İstəyi göndərdik amma nəticə yoxdur.
