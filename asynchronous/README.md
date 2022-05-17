@@ -133,27 +133,27 @@ Maraqlıdır? Demək burda nə olur: SetTimeout callback funksiya aldığı üç
 ### PROMISE
 Promise, asinxron əməliyyatın son nəticəsini təmsil edən javascript obyektidir.
 
-![This is image](./img/promise0.png);
-![This is image](./img/promise.png);
+![This is image](./img/promise0.png)
+![This is image](./img/promise.png)
 
 #### PromiseState nədir, necə başa düşək?
 Tutaq ki, RESTApi'dən və ya verilənlər bazasından eləcə də internetdən bir məlumat almaq istəyirik. Almamışdan əvvəl PromiseState'in dəyəri "Pending", PromiseResult'un dəyəri isə "undefined" olur. Yuxarıdaki şəkildə new Promise() - ilə yaradılan obyektə verilən iki parametrə baxaq. Resolve (həll etmək) və Reject (rədd etmək). İndi biraz da əvvələ qayıdıb Promise sözünə baxaq. Promise - söz vermək. Mmmm... Demək belə düşünə bilərik: Bizə hər hansı bir yerdən məlumat gətirərkən, gətiriləcəyinin və ya gətirilərkən yaranan xətanın haqqında məlumatı bizə göstərməyə söz verilir. Davam edək:
 
-![This is image](./img/promise02.png);
-![This is image](./img/promise03.png);
+![This is image](./img/promise02.png)
+![This is image](./img/promise03.png)
 
 resolve(); yazıldığı zaman, PromiseState'in dəyərinin "fulfilled" (yerinə yetirildi (bəzən resolved də deyilir)) olduğunu görürük. Yəni uğurla nəticələndi. Amma PromiseResult hələ də undefined olaraq qalıb. Niyə? Çünki biz obyekti (new Promise) yaradarkən yazdığımız funksiya 2 parametr alır (Resolve və Reject) və bunlarda özləri bir funksiyadır amma biz o funskiyalara dəyər göndərmədik. Baş qarışdı bilirəm amma düzələcək səbirli olaq :) 
 
 ##### İndi resolve funksiyasına parametr verək: 
 
-![This is image](./img/promise04.png);
-![This is image](./img/promise05.png);
+![This is image](./img/promise04.png)
+![This is image](./img/promise05.png)
 
 Demək resolve'ə göndərdiyimiz "Data" bizə PromiseResult ilə qayıtdı. Əlbəttə ki, biz məlumatlarımızı string şəklində almayacıq. İndi sadəcə səhnələşdiririk. 
 
 ##### İndi keçək digər dostumuza "REJECT"
 
-![This is image](./img/promise06.png);
-![This is image](./img/promise07.png);
+![This is image](./img/promise06.png)
+![This is image](./img/promise07.png)
 
 Dostumuz Reject bizə deyir ki, bir xəta aldın. Ona görə də qırmızı arxa fonda "Uncaught (in promise) undefined" xətası aldıq. Demək bizə verilən söz (Promise) yerinə yetirildi.
