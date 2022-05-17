@@ -1,4 +1,5 @@
 // PROMISE
+
 const books = [
     { name: "Pinball 1973", author: "Haruki Murakami" },
     { name: "Azadliq", author: "Zygmunt Bauman" },
@@ -11,16 +12,18 @@ const listBooks = () => {
     })
 }
 
-const addNewBook = (newBook, callback) => {
-    books.push(newBook);
-    callback();
+const addNewBook = (newBook) => {
+    const promise = new Promise((resolve, reject) => {
+        books.push(newBook);
+        resolve();
+        // reject('ERROR')
+    });
+
+    return promise;
 }
 
-addNewBook({ name: "Berlin xatireleri", author: "Husrev Gerede" }, listBooks);
-
-const promise = new Promise(function(resolve, reject) {
-    reject('ERROR')
-})
-
-// promise.then(value => console.log(value))
-promise.catch(reason => console.log(reason))
+addNewBook({ name: "Berlin xatireleri", author: "Husrev Gerede" })
+    .then(() => {
+        listBooks()
+    })
+    .catch(reason => console.log(reason))
