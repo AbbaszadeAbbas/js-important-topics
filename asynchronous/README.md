@@ -132,5 +132,9 @@ Maraqlıdır? Demək burda nə olur: SetTimeout callback funksiya aldığı üç
 
 ### PROMISE
 Promise, asinxron əməliyyatın son nəticəsini təmsil edən javascript obyektidir.
+
 ![This is image](./img/promise0.png);
 ![This is image](./img/promise.png);
+
+#### PromiseState nədir, necə başa düşək?
+Tutaq ki, RESTApi'dən və ya verilənlər bazasından eləcə də internetdən bir məlumat almaq istəyirik. Almamışdan əvvəl PromiseState'in dəyəri "Pending", PromiseResult'un dəyəri isə "undefined" olur. Yuxarıdaki şəkildə new Promise() - ilə yaradılan obyektə verilən iki parametrə baxaq. Resolve (həll etmək) və Reject (rədd etmək). İndi biraz da əvvələ qayıdıb Promise sözünə baxaq. Promise - söz vermək. Mmmm... Demək belə düşünə bilərik: Bizə hər hansı bir yerdən məlumat gətirərkən, gətiriləcəyinin və ya gətirilərkən yaranan xətanın haqqında məlumatı bizə göstərməyə söz verilir. Davam edək:
