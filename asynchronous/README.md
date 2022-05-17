@@ -131,4 +131,6 @@ Ardıcıllıq belə olacaq:
 Maraqlıdır? Demək burda nə olur: SetTimeout callback funksiya aldığı üçün və callback funksiayalar proqramda ən son çalışdığı üçün (Çünki callback funksiyalar callback quyruğuna göndərilir və müvafiq müddətdən sonra callstack'a ötürülür.) 1 saniyə keçsə belə task() funksiyasının bitməsini gözləyir (Bu bir neçə saniyə çəkir) və ekranda görünür. 
 
 ### PROMISE
-Promise, asinxron əməliyyatın son nəticəsini təmsil edən javascript obyektidir. 
+Promise, asinxron əməliyyatın son nəticəsini təmsil edən javascript obyektidir.
+![This is image](./img/promise0.png);
+![This is image](./img/promise.png);
