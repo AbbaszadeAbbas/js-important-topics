@@ -152,4 +152,6 @@ resolve(); yazıldığı zaman, PromiseState'in dəyərinin "fulfilled" (yerinə
 Demək resolve'ə göndərdiyimiz "Data" bizə PromiseResult ilə qayıtdı. Əlbəttə ki, biz məlumatlarımızı string şəklində almayacıq. İndi sadəcə səhnələşdiririk. 
 
 ##### İndi keçək digər dostumuza "REJECT"
- 
+
+![This is image](./img/promise06.png);
+![This is image](./img/promise07.png);
