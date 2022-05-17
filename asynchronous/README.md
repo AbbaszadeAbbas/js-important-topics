@@ -184,3 +184,6 @@ Biraz qarışıq kimi gəlir amma Javascriptdəki OOP struktrunu yaxşı başa d
 
 ##### Reject'ə göndərilən dəyəri necə alarıq? 
 Burada da resolve üçün istifadə etmiyiz .then yerinə, .catch istifadə edirik. Yəni:
+
+![This is image](./img/promise12.png)
+![This is image](./img/promise13.png)
