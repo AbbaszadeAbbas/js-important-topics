@@ -174,9 +174,13 @@ Promise'in 3 ədəd state'i (PromiseState) var:
     - İstəyi göndərdik amma uğurla nəticələnmədi.
     - PromiseResult: reject'in aldığı dəyər  / undefined
 
-Yaxşı bəs resolve və ya reject'ə göndərdiyimiz dəyəri necə alarıq? Nəzərə alın ki, yuxarıdaki şəkillərdə yaratdığımız promise dəyişənini istifadə etməklə məsələn promise.value, promise.PromiseResult yazaraq dəyəri ala bilmərik. Resolve üçün .then istifadə edilməlidir. Yəni:
+##### Yaxşı bəs resolve'ə göndərdiyimiz dəyəri necə alarıq? 
+Nəzərə alın ki, yuxarıdaki şəkillərdə yaratdığımız promise dəyişənini istifadə etməklə məsələn promise.value, promise.PromiseResult yazaraq dəyəri ala bilmərik. Resolve üçün .then istifadə edilməlidir. Yəni:
 
 ![This is image](./img/promise10.png)
 ![This is image](./img/promise11.png)
 
 Biraz qarışıq kimi gəlir amma Javascriptdəki OOP struktrunu yaxşı başa düşsək bu qarmaşıqlığın öhdəsindən çox asanlıqla gələ bilərik. Göründüyü kimi .then özü bir funksiyadır və parametr olaraq ona resolve funksiyası dəyər göndərir. Çox maraqlıdır hə? İçinizdəki səsi eşidirəm, "yox maraqlı deyil". 
+
+##### Reject'ə göndərilən dəyəri necə alarıq? 
+Burada da resolve üçün istifadə etmiyiz .then yerinə, .catch istifadə edirik. Yəni:

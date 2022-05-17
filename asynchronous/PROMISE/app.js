@@ -19,7 +19,8 @@ const addNewBook = (newBook, callback) => {
 addNewBook({ name: "Berlin xatireleri", author: "Husrev Gerede" }, listBooks);
 
 const promise = new Promise(function(resolve, reject) {
-    resolve('DATA')
+    reject('ERROR')
 })
 
-promise.then(value => console.log(value))
+// promise.then(value => console.log(value))
+promise.catch(reason => console.log(reason))
