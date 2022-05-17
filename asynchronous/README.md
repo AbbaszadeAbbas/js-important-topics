@@ -138,3 +138,6 @@ Promise, asinxron əməliyyatın son nəticəsini təmsil edən javascript obyek
 
 #### PromiseState nədir, necə başa düşək?
 Tutaq ki, RESTApi'dən və ya verilənlər bazasından eləcə də internetdən bir məlumat almaq istəyirik. Almamışdan əvvəl PromiseState'in dəyəri "Pending", PromiseResult'un dəyəri isə "undefined" olur. Yuxarıdaki şəkildə new Promise() - ilə yaradılan obyektə verilən iki parametrə baxaq. Resolve (həll etmək) və Reject (rədd etmək). İndi biraz da əvvələ qayıdıb Promise sözünə baxaq. Promise - söz vermək. Mmmm... Demək belə düşünə bilərik: Bizə hər hansı bir yerdən məlumat gətirərkən, gətiriləcəyinin və ya gətirilərkən yaranan xətanın haqqında məlumatı bizə göstərməyə söz verilir. Davam edək:
+
+![This is image](./img/promise02.png);
+![This is image](./img/promise03.png);
