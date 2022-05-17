@@ -19,8 +19,7 @@ const addNewBook = (newBook, callback) => {
 addNewBook({ name: "Berlin xatireleri", author: "Husrev Gerede" }, listBooks);
 
 const promise = new Promise(function(resolve, reject) {
-    // resolve('DATA');
-    reject('ERROR');
+    resolve('DATA')
 })
 
-console.log(promise);
+promise.then(value => { console.log(value) })
