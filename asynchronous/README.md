@@ -173,3 +173,8 @@ Promise'in 3 ədəd state'i (PromiseState) var:
 3. Rejected:
     - İstəyi göndərdik amma uğurla nəticələnmədi.
     - PromiseResult: reject'in aldığı dəyər  / undefined
+
+Yaxşı bəs resolve və ya reject'ə göndərdiyimiz dəyəri necə alarıq? Nəzərə alın ki, yuxarıdaki şəkillərdə yaratdığımız promise dəyişənini istifadə etməklə məsələn promise.value, promise.PromiseResult yazaraq dəyəri ala bilmərik. Resolve üçün .then istifadə edilməlidir. Yəni:
+
+![This is image](./img/promise10.png)
+![This is image](./img/promise11.png)
