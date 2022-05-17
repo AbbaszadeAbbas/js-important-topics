@@ -22,4 +22,4 @@ const promise = new Promise(function(resolve, reject) {
     resolve('DATA')
 })
 
-promise.then(value => { console.log(value) })
+promise.then(value => console.log(value))
